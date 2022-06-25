@@ -16,8 +16,6 @@ class Cards extends Component {
 
                     {this.state.names.map(name =>
 
-
-
                     <div class="card" >
                         <img class="card-img-top" src="https://picsum.photos/200" alt="" />
                         <div class="card-body">
