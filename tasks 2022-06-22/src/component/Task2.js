@@ -24,7 +24,7 @@ class Task2 extends Component {
                     <tbody>
                         {this.state.Fruits.map(a=>
                              <tr>
-                             <td scope="row">{a.id}</td>
+                             <td scope="row" key={a.id}>{a.id}</td>
                              <td>{a.name}</td>
                              <td>{a.color}</td>
                          </tr>
