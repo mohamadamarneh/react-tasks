@@ -32,7 +32,7 @@ const Flix = () => {
 
 
 
-            {movies.map(a =>
+            {/* {movies.map(a =>
 
                 <div class="card" style="width: 18rem;">
                     
@@ -44,7 +44,7 @@ const Flix = () => {
                 </div>
 
 
-            )}
+            )} */}
 
 
 
