@@ -1,12 +1,18 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import {AuthContext } from './component/authContext';
 
-const Header = () => {
+export default function Header () {
+    const authContext = useContext(AuthContext);
+
+
+    console.log("header",authContext)
+    
     return ( 
         <nav className="nav nav-tabs nav-stacked">
             <p className="nav-link active" href="#">Active link</p>
-            {false ? 
+            {true ? 
             <div>
-                <p className="nav-link disabled" href="#">amang@us.com </p>
+                <p className="nav-link disabled" href="#"> dscdcw </p>
                  <button className='btn btn-danger btn-sm'>logout</button>
                  </div> 
                  :<p className="nav-link disabled" href="#">you must be login!</p>}
@@ -14,5 +20,4 @@ const Header = () => {
         </nav>
      );
 }
- 
-export default Header;
+

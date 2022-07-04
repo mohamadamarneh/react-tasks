@@ -6,14 +6,14 @@ import Header from './component/header';
 import Log from './component/login';
 import { AuthProvider , AuthContext } from './component/authContext';
 
-function App() {
-  const authContext = useContext(AuthContext)
-console.log(authContext)
+export function App() {
+  const authContext = useContext(AuthContext);
+console.log(authContext);
   return (
     <div>
       
       <Header />
-      {true ? <div ><h2>welcome Home</h2><Count /></div> : <Log />}
+      {authContext.auth.email ? <div ><h2>welcome Home</h2><Count /></div> : <Log />}
     </div>
 
   );
@@ -27,4 +27,4 @@ function AppWithStore() {
 
 
 }
-export default App;
+ export default AppWithStore;
