@@ -10,7 +10,7 @@ function App() {
   let st=({ isActive})=> {
     
     return {
-      color : isActive ? "red" : "blue",
+      color : isActive ? "red" : "white",
       fontSize : isActive ? "20px" : "20px"
     }
 

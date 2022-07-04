@@ -39,3 +39,15 @@
 .card-img-top{
   width: 300px;
 }
+
+.hero{
+  height: 100vh;
+  color: white;
+  background-color: #282c34;
+
+  text-align: center;
+  justify-content: center;
+
+  /* background-image: url('img-home.jpg'); */
+  /* background-image: url('video-1.mp4'); */
+}
